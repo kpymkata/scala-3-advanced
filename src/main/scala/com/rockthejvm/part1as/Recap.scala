@@ -9,8 +9,7 @@ object Recap {
   val anIfExpression = if (aCondition) 42 else 55 // expressions evaluate to a value
 
   val aCodeBlock = {
-    if (aCondition) 54
-    78
+    if (aCondition) 54 else 78
   }
 
   // types: Int, String, Double, Boolean, Char, ...

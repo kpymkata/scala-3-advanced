@@ -63,7 +63,7 @@ object SelfTypes {
     // some other API
     def actionLayer2(x: String): Int
   }
-  trait Application { self: ComponentLayer1 with ComponentLayer2 =>
+  trait Application { self: ComponentLayer1 & ComponentLayer2 =>
     // your main API
   }
 
