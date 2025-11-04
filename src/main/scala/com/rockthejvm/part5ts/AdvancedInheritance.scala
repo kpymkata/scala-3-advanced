@@ -17,7 +17,7 @@ object AdvancedInheritance {
 
   // class MyDataStream extends Writer[String] with Stream[String] with Closeable { ... }
 
-  def processStream[T](stream: Writer[T] with Stream[T] with Closeable): Unit = {
+  def processStream[T](stream: Writer[T] & Stream[T] & Closeable): Unit = {
     stream.foreach(println)
     stream.close(0)
   }

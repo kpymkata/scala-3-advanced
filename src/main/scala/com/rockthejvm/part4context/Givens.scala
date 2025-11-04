@@ -7,7 +7,7 @@ object Givens {
   val anOrderedList = aList.sorted//(descendingOrdering)
 
   given descendingOrdering: Ordering[Int] = Ordering.fromLessThan(_ > _)
-  val anInverseOrderedList = aList.sorted(descendingOrdering)
+  val anInverseOrderedList = aList.sorted(using descendingOrdering)
 
   // custom sorting
   case class Person(name: String, age: Int)

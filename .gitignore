@@ -144,6 +144,19 @@ project/plugins/project/
 .cache
 .lib/
 .bsp
+.DS_Store
+
+# Bloop build server files
+.bloop/
+project/.bloop/
+
+# Metals related
+.metals/
+metals.sbt
+project/metails.sbt
+
+#vscode related
+.vscode
 
 ### Scala ###
 
