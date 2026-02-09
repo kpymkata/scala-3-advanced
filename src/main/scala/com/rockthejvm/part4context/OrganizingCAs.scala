@@ -80,7 +80,7 @@ object OrganizingCAs {
         val yTotalPrice = y.nUnits * y.unitPrice
 
         if (xTotalPrice == yTotalPrice) 0
-        else if (xTotalPrice < yTotalPrice) -1
+        else if (yTotalPrice < xTotalPrice) -1
         else 1
       }
   }
